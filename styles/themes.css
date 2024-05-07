@@ -12,9 +12,52 @@
         --assent_font: 'PressStart', sans-serif;
         --bg_color: #000;
         --assent_color: #00CC14;
+        --bg_image: 
+        repeating-linear-gradient(
+        to right,
+        #000 0px,
+        #000 2px,
+        rgb(0, 0, 0, 0) 2px,
+        rgb(0, 0, 0, 0) 4px),
+        repeating-linear-gradient(
+        to top,
+        #000 0px,
+        #000 2px,
+        rgb(0, 0, 0, 0) 2px,
+        rgb(0, 0, 0, 0) 4px),
+        linear-gradient(
+        to bottom,
+        #007f0c,
+        #004306);
     }
 
 
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --main_font: 'inter', serif;
+        --assent_font: 'PressStart', sans-serif;
+        --bg_color: #fff;
+        --assent_color: #000;
+        --bg_image: 
+        repeating-linear-gradient(
+        to right,
+        #d3d3d3 0px,
+        #d3d3d3 2px,
+        rgb(0, 0, 0, 0) 2px,
+        rgb(0, 0, 0, 0) 4px),
+        repeating-linear-gradient(
+        to top,
+        #d3d3d3 0px,
+        #d3d3d3 2px,
+        rgb(0, 0, 0, 0) 2px,
+        rgb(0, 0, 0, 0) 4px),
+        linear-gradient(
+        to bottom,
+        #e7e7e7,
+        #1a1a1a);
+    }
 }
 
 :root.theme-dark {
@@ -22,7 +65,23 @@
     --assent_font: 'PressStart', sans-serif;
     --bg_color: #000;
     --assent_color: #00CC14;
-
+    --bg_image: 
+        repeating-linear-gradient(
+        to right,
+        #000 0px,
+        #000 2px,
+        rgb(0, 0, 0, 0) 2px,
+        rgb(0, 0, 0, 0) 4px),
+        repeating-linear-gradient(
+        to top,
+        #000 0px,
+        #000 2px,
+        rgb(0, 0, 0, 0) 2px,
+        rgb(0, 0, 0, 0) 4px),
+        linear-gradient(
+        to bottom,
+        #007f0c,
+        #004306);
 }
 
 :root.theme-light {
@@ -30,5 +89,21 @@
     --assent_font: 'PressStart', sans-serif;
     --bg_color: #fff;
     --assent_color: #000;
-
+    --bg_image: 
+        repeating-linear-gradient(
+        to right,
+        #d3d3d3 0px,
+        #d3d3d3 2px,
+        rgb(0, 0, 0, 0) 2px,
+        rgb(0, 0, 0, 0) 4px),
+        repeating-linear-gradient(
+        to top,
+        #d3d3d3 0px,
+        #d3d3d3 2px,
+        rgb(0, 0, 0, 0) 2px,
+        rgb(0, 0, 0, 0) 4px),
+        linear-gradient(
+        to bottom,
+        #e7e7e7,
+        #1a1a1a);
 }
