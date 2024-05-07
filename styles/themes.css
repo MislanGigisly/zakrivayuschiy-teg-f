@@ -4,3 +4,31 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --main_font: 'inter', serif;
+        --assent_font: 'PressStart', sans-serif;
+        --bg_color: #000;
+        --assent_color: #00CC14;
+    }
+
+
+}
+
+:root.theme-dark {
+    --main_font: 'inter', serif;
+    --assent_font: 'PressStart', sans-serif;
+    --bg_color: #000;
+    --assent_color: #00CC14;
+
+}
+
+:root.theme-light {
+    --main_font: 'inter', serif;
+    --assent_font: 'PressStart', sans-serif;
+    --bg_color: #fff;
+    --assent_color: #000;
+
+}
