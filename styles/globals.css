@@ -38,6 +38,7 @@ input {
   line-height: inherit;
   background-color: inherit;
   border: none;
+  cursor: pointer;
 }
 
 ul,

@@ -83,7 +83,13 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  left: -10px;
+  left: -15px;
+  animation: arrow 1s ease infinite alternate;
+}
+
+.theme-menu__button:disabled {
+ 
+  animation: unactive__menu 0.3s ease forwards;
 }
 
 .card {
