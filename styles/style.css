@@ -50,9 +50,9 @@
 .headline {
   text-align: center;
   font-family: var(--assent_font);
-  font-size: 49px;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   font-weight: 400;
-  line-height: 49px;
+  line-height: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -60,9 +60,9 @@
 .head__text {
   text-align: center;
   font-family: var(--assent_font);
-  font-size: 14px;
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   font-weight: 400;
-  line-height: 14px;
+  line-height: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
   margin-bottom: 25px;
 }
@@ -142,7 +142,7 @@
 .title {
   padding: 5px 10px;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: var(--fw_title);
   line-height: 22px;
 }
 
@@ -189,7 +189,7 @@
 }
 
 .card__text {
-  padding: 25px 27px 28px 27px;
+  padding: 25px 25px 28px 25px;
 }
 
 .memories {
@@ -442,4 +442,36 @@
   font-weight: 400;
   line-height: 150%;
   text-transform: uppercase;
+}
+
+.first__card {
+  filter: saturate(390%);
+}
+
+.second__card {
+  filter: grayscale(80%);
+}
+
+.third__card {
+  filter: contrast(150%);
+}
+
+.four__card {
+  filter: grayscale(50%) contrast(250%) sepia(0.3);
+}
+
+.five__card {
+  filter: invert(100%);
+}
+
+.six__card {
+  filter: brightness(150%);
+}
+
+.seven__card {
+  filter: sepia(0.8) contrast(150%);
+}
+
+.eight__card {
+  filter: saturate(390%) contrast(150%) sepia(0.6);
 }
