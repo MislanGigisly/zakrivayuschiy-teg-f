@@ -33,3 +33,31 @@
         cursor: none;
     }
 }
+
+@keyframes flash__heart {
+    from{
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.5;
+    }
+
+    to {
+        scale: 1;
+    }
+}
+
+@keyframes flash {
+    from {
+        fill: transparent;
+    }
+
+    50% {
+        fill: red;
+    }
+
+    to {
+        fill: transparent;
+    }
+}

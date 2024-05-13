@@ -4,7 +4,9 @@
     --assent_font: 'PressStart', sans-serif;
     --bg_color: #fff;
     --assent_color: #000;
-    --cover-color:#fff;
+    --cover_color:#fff;
+    --contour_heart: #000;
+    --heart_body: red;
     --bg_image: 
     repeating-linear-gradient(
         to right,
