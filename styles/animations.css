@@ -14,11 +14,11 @@
 */
 @keyframes arrow {
     0% {
-        left: -10px;
+        left: -12px;
     }
 
     100% {
-        left: -15px;
+        left: -17px;
     }
 }
 

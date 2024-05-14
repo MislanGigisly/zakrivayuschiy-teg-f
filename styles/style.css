@@ -34,7 +34,7 @@
   width: 100vw;
   max-inline-size: 696px;
   margin: 100px 0 100px 0;
-  padding: 125px 0 25px 0;
+  padding: 120px 0 20px 0;
   border: solid 2px var(--assent_color);
 }
 
@@ -54,7 +54,7 @@
   font-weight: 400;
   line-height: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .head__text {
@@ -64,18 +64,19 @@
   font-weight: 400;
   line-height: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .theme-menu {
   display: flex;
   justify-content: center;
+  padding-left: 20px;
 }
 
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 8px;
 }
 
 .theme-menu__button {
@@ -91,7 +92,7 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  left: -10px;
+  left: -12px;
   animation: arrow 0.5s ease-in-out infinite alternate;
 }
 
@@ -140,7 +141,7 @@
 }
 
 .title {
-  padding: 5px 10px;
+  padding: 5px 10px 2.5px 10px;
   font-size: 18px;
   font-weight: var(--fw_title);
   line-height: 22px;
@@ -148,6 +149,8 @@
 
 .card__photo {
   position: relative;
+  border-top: 2px solid var(--assent_color);
+  border-bottom: 2px solid var(--assent_color);
 }
 
 .decoreation__text {
@@ -166,6 +169,7 @@
   0 -1px 0 var(--bg_color);
   background-blend-mode: hard-light;
   opacity: 0.5;
+  z-index: 1;
 }
 
 @supports((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000)) {
@@ -178,7 +182,11 @@
 
 
 .photo {
+  display: block;
   width:  100%;
+  min-height: 371px;
+  max-height: 696px;
+  object-fit: cover;
 }
 
 
@@ -193,7 +201,7 @@
 }
 
 .memories {
-  padding: 0 25px 25px 25px;
+  padding: 0 25px 24px 25px;
 }
 
 .like__conteiner {
@@ -239,6 +247,10 @@
   fill: transparent;
   transition: opacity 0.3s;
   
+}
+
+.like-icon {
+
 }
 
 .like-icon:hover {
