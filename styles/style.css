@@ -28,11 +28,13 @@
   padding-bottom: 102px;
 }
 
+
+
 .header {
   background-color: var(--bg_color);
   min-inline-size: 375px;
   width: 100vw;
-  max-inline-size: 696px;
+  max-inline-size: 700px;
   margin: 100px 0 100px 0;
   padding: 120px 0 20px 0;
   border: solid 2px var(--assent_color);
@@ -133,11 +135,11 @@
 .card {
   background-color: var(--bg_color);
   border: solid 2px var(--assent_color);
-  margin-bottom: 54px;
+  margin-bottom: 50px;
   padding-bottom: 25px;
   min-inline-size: 375px;
   width: 100vw;
-  max-inline-size: 696px;
+  max-inline-size: 700px;
 }
 
 .title {
@@ -145,13 +147,27 @@
   font-size: 18px;
   font-weight: var(--fw_title);
   line-height: 22px;
+  border-bottom: 2px solid var(--assent_color);
+}
+
+@media (width > 375px) {
+  .title {
+    padding: 5px 10px 3.5px 10px;
+  }
+  
+}
+
+.mistake__of__maket {
+  padding: 4px 10px 5px 10px;
 }
 
 .card__photo {
   position: relative;
-  border-top: 2px solid var(--assent_color);
-  border-bottom: 2px solid var(--assent_color);
+  
+  
+  aspect-ratio: 1/1;
 }
+
 
 .decoreation__text {
   font-family: var(--assent_font);
@@ -183,12 +199,11 @@
 
 .photo {
   display: block;
-  width:  100%;
-  min-height: 371px;
-  max-height: 696px;
+  
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
-
 
 .card__text, .memories {
   font-size: 18px;
@@ -198,6 +213,7 @@
 
 .card__text {
   padding: 25px 25px 28px 25px;
+  border-top: 2px solid var(--assent_color);
 }
 
 .memories {
@@ -213,7 +229,7 @@
 }
 
 .card__icon-button {
-  width: 36px;
+  width: 34px;
   height: 34px;
   padding: 0;
   border: 2px solid transparent;
@@ -250,7 +266,7 @@
 }
 
 .like-icon {
-
+  overflow: visible;
 }
 
 .like-icon:hover {
@@ -309,6 +325,7 @@
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.3s;
+  padding-top: 4px;
 }
 
 .card__like-button:focus {
@@ -407,6 +424,7 @@
   z-index: 1;
   width: 28px;
   height: 28px;
+  margin-bottom: 2px;
 }
 
 @media (width > 375px) {
@@ -416,6 +434,7 @@
   .floppy {
     width: 21px;
     height: 21px;
+    margin-bottom: 0px;
   }
 }
 
