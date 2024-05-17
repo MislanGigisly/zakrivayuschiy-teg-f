@@ -26,6 +26,7 @@
 @keyframes unactive__menu {
 
     from {
+        opacity: 1;
     }
 
     to {
@@ -37,7 +38,7 @@
 
 @keyframes flash__heart {
 
-    from{
+    from {
         scale: 1;
     }
 

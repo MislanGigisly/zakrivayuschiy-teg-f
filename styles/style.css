@@ -141,7 +141,7 @@
 .title {
   padding: 5px 10px 2.5px 10px;
   font-size: 18px;
-  font-weight: var(--fw_title);
+  font-variation-settings: "wght" var(--fw_title);
   line-height: 22px;
   border-bottom: 2px solid var(--assent_color);
 }
@@ -169,7 +169,7 @@
   font-weight: 400;
   line-height: 14px;
   position: absolute;
-  right: 11px;
+  right: calc(1.3vw + 3px);
   top: 25px;
   text-transform: uppercase;
   text-shadow:  
@@ -181,6 +181,15 @@
   opacity: 0.5;
   z-index: 1;
 }
+
+@media (width > 375px) {
+
+  .decoreation__text {
+    right: calc(1.3vw);
+  }
+}
+
+
 
 @supports((text-stroke: 1px #000) or (-webkit-text-stroke: 1px #000)) {
 
