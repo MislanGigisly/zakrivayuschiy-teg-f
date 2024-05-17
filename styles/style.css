@@ -450,11 +450,12 @@
 .cover[open] {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: var(--bg_color);
   padding: 30px 40px;
   color: var(--assent_color);
   max-inline-size: 353px;
-  gap: 30px;
+  gap: 22px;
   border: solid 2px var(--assent_color);
   max-height: 191px;
   max-width: 341px;
@@ -472,6 +473,15 @@
 .content {
   display: flex;
   gap: 20px;
+}
+
+.form__cover{
+  width: 100%;
+}
+
+.cover__save {
+  width: 100%;
+  padding: 12.5px 0;
 }
 
 .cover::backdrop {

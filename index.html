@@ -287,8 +287,7 @@
         </svg>
         <span class="save__text">Сохранить на память</span>
       </button>
-      <dialog id="dialog" class="cover" method="dialog">
-
+      <dialog id="dialog" class="cover">
         <div class="content">
           <div class="floppy__div">
             <svg viewBox="0 0 39 39" class="floppy floppy__cover">
@@ -297,10 +296,11 @@
           </div>
           <h2 class="instruction">Вставьте дискету, чтобы продолжить</h2>
         </div>
-        <button type="button" onclick="window['dialog'].close()" class="save__button">
-          <span class="save__text">ОК</span>
-        </button>
-
+        <form method="dialog" class="form__cover">
+          <button type="button" onclick="window['dialog'].close()" class="save__button cover__save">
+            <span class="save__text">ОК</span>
+          </button>
+      </form>
       </dialog>
     </footer>
   </main>
