@@ -1,6 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --main_font: 'inter', serif;
+    --main_font: 'Inter', serif;
     --assent_font: 'PressStart', sans-serif;
     --fw_title: 700;
     --bg_color: #fff;
@@ -8,6 +8,7 @@
     --cover_color:#fff;
     --contour_heart: #000;
     --heart_body: red;
+    --heart_sparks: red;
     --bg_image: 
     repeating-linear-gradient(
         to right,

@@ -8,7 +8,7 @@
 @media (prefers-color-scheme: dark) {
 
     :root {
-        --main_font: 'inter', serif;
+        --main_font: 'Inter', serif;
         --assent_font: 'PressStart', sans-serif;
         --fw_title: 785;
         --bg_color: #000;
@@ -16,6 +16,7 @@
         --cover_color:#00CC14;
         --contour_heart: #00CC14;
         --heart_body: #00CC14;
+        --heart_sparks: red;
         --bg_image: 
         repeating-linear-gradient(
         to right,
@@ -37,7 +38,7 @@
 }
 
 :root.theme-dark {
-    --main_font: 'inter', serif;
+    --main_font: 'Inter', serif;
     --assent_font: 'PressStart', sans-serif;
     --fw_title: 785;
     --bg_color: #000;
@@ -45,6 +46,7 @@
     --cover_color:#00CC14;
     --contour_heart: #00CC14;
     --heart_body: #00CC14;
+    --heart_sparks: red;
     --bg_image: 
         repeating-linear-gradient(
         to right,
@@ -65,7 +67,7 @@
 }
 
 :root.theme-light {
-    --main_font: 'inter', serif;
+    --main_font: 'Inter', serif;
     --assent_font: 'PressStart', sans-serif;
     --fw_title: 700;
     --bg_color: #fff;
@@ -73,6 +75,7 @@
     --cover_color:#fff;
     --contour_heart: #000;
     --heart_body: #000;
+    --heart_sparks: red;
     --bg_image: 
         repeating-linear-gradient(
         to right,

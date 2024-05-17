@@ -53,6 +53,8 @@
   line-height: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-transform: uppercase;
   margin-bottom: 21px;
+  text-decoration: none;
+  display: block;
 }
 
 .head__text {
@@ -138,7 +140,7 @@
   max-inline-size: 700px;
 }
 
-.title {
+.card__title {
   padding: 5px 10px 2.5px 10px;
   font-size: 18px;
   font-variation-settings: "wght" var(--fw_title);
@@ -148,7 +150,7 @@
 
 @media (width > 375px) {
 
-  .title {
+  .card__title {
     padding: 5px 10px 3.5px 10px;
   }
 }
@@ -207,19 +209,17 @@
   object-fit: cover;
 }
 
-.card__text, .memories {
+.card__text {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-}
-
-.card__text {
   padding: 25px 25px 28px 25px;
   border-top: 2px solid var(--assent_color);
 }
 
-.memories {
+.card__text:nth-child(4) {
   padding: 0 25px 24px 25px;
+  border: none;
 }
 
 .like__conteiner {
@@ -344,7 +344,7 @@
   display: block;
   position: absolute;
   transform: translate(-100%);
-  height: 105%;
+  height: 106%;
   width: 100%;
   background-color: var(--assent_color);
   transition: transform 0.5s ease-in-out;
@@ -419,10 +419,8 @@
   }
 }
 
-.save__text {
+.white__color {
   color: var(--cover_color);
-  mix-blend-mode: difference;
-  z-index: 1;
 }
 
 .floppy {
@@ -505,34 +503,34 @@
   text-transform: uppercase;
 }
 
-.first__card {
+.nul__sprint {
   filter: saturate(390%);
 }
 
-.second__card {
+.clear__list {
   filter: grayscale(80%);
 }
 
-.third__card {
+.if__trouble {
   filter: contrast(150%);
 }
 
-.four__card {
+.run__to__ideal {
   filter: grayscale(50%) contrast(250%) sepia(0.3);
 }
 
-.five__card {
+.who__around {
   filter: invert(100%);
 }
 
-.six__card {
+.other__strategy {
   filter: brightness(150%);
 }
 
-.seven__card {
+.hands_down {
   filter: sepia(0.8) contrast(150%);
 }
 
-.eight__card {
+.i__am__here {
   filter: saturate(390%) contrast(150%) sepia(0.6);
 }
