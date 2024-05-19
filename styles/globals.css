@@ -56,8 +56,3 @@ ol {
   white-space: nowrap;
 }
 
-.page {
-  font-family: var(--main_font);
-  background-color: var(--bg_color);
-  color: var(--assent_color);
-}

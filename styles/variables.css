@@ -1,8 +1,9 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --main_font: 'Inter', serif;
-    --assent_font: 'PressStart', sans-serif;
+    --main_font: 'Inter', sans-serif;
+    --assent_font: 'PressStart', fantasy;
     --fw_title: 700;
+    --fw_card__text: 400;
     --bg_color: #fff;
     --assent_color: #000;
     --cover_color:#fff;

@@ -19,20 +19,7 @@
     }
 
     100% {
-        left: -17px;
-    }
-}
-
-@keyframes unactive__menu {
-
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0.6;
-        pointer-events: none;
-        cursor: none;
+        left: -16px;
     }
 }
 
@@ -42,12 +29,8 @@
         scale: 1;
     }
 
-    50% {
-        scale: 1.5;
-    }
-
     to {
-        scale: 1;
+        scale: 1.5;
     }
 }
 
@@ -57,11 +40,7 @@
         fill: transparent;
     }
 
-    50% {
-        fill: red;
-    }
-
     to {
-        fill: transparent;
+        fill: red;
     }
 }

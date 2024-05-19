@@ -26,12 +26,15 @@
   background-position: center;
   background-attachment: fixed;
   padding-bottom: 102px;
+  font-family: var(--main_font);
+  background-color: var(--bg_color);
+  color: var(--assent_color);
 }
 
 .header {
   background-color: var(--bg_color);
   min-inline-size: 375px;
-  width: 100vw;
+  inline-size: 100vw;
   max-inline-size: 700px;
   margin: 100px 0 100px 0;
   padding: 120px 0 20px 0;
@@ -86,7 +89,7 @@
   font-weight: 400;
   line-height: 14px;
   text-transform: uppercase;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:disabled::before {
@@ -97,12 +100,15 @@
 }
 
 .theme-menu__button:disabled {
-  animation: unactive__menu 0.3s ease forwards;
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: none;
+  transition: opacity 0.3s;
 }
+
 
 .theme-menu__button:hover {
   opacity: 0.6;
-  transition: opacity 0.3s;
 }
 
 .theme-menu__button:focus-visible {
@@ -112,21 +118,22 @@
 .theme-menu__button::after {
   content: '';
   display: block;
-  width: 0%;
+  inline-size: 0%;
   height: 2px;
   background-color: var(--assent_color);
-  transition: width 300ms;
+  transition: scaleX(0) 300ms;
 }
 
 .theme-menu__button:focus-visible::after {
   opacity: 0.6;
-  width: 100%;
-  transition: width 300ms;
+  inline-size: 100%;
+  transition: scaleX(1) 300ms;
 }
 
 
 .theme-menu__button:focus {
   outline: none;
+  opacity: 0.6;
 }
 
 
@@ -136,7 +143,7 @@
   margin-bottom: 50px;
   padding-bottom: 25px;
   min-inline-size: 375px;
-  width: 100vw;
+  inline-size: 100vw;
   max-inline-size: 700px;
 }
 
@@ -179,7 +186,7 @@
   0 1px 0 var(--bg_color), 
   -1px 0 0 var(--bg_color),
   0 -1px 0 var(--bg_color);
-  background-blend-mode: hard-light;
+  mix-blend-mode: hard-light;
   opacity: 0.5;
   z-index: 1;
 }
@@ -193,7 +200,7 @@
 
 
 
-@supports((text-stroke: 1px #000) or (-webkit-text-stroke: 1px #000)) {
+@supports((text-stroke: 1px var(--bg_color)) or (-webkit-text-stroke: 1px var(--bg_color))) {
 
   .decoreation__text {
       -webkit-text-stroke: 1px var(--bg_color);
@@ -204,14 +211,15 @@
 
 .photo {
   display: block;
-  width: 100%;
+  inline-size: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .card__text {
   font-size: 18px;
-  font-weight: 400;
+  font-variation-settings: "wght" var(--fw_card__text);
   line-height: 21px;
   padding: 25px 25px 28px 25px;
   border-top: 2px solid var(--assent_color);
@@ -231,10 +239,11 @@
 }
 
 .card__icon-button {
-  width: 34px;
+  inline-size: 34px;
   height: 34px;
   padding: 0;
   border: 2px solid transparent;
+  background-color: transparent;
   transition: border 0.3s ease;
 }
 
@@ -318,7 +327,7 @@
 }
 
 .card__like-button {
-  width: 130px;
+  inline-size: 130px;
   height: 38px;
   border: solid 2px var(--assent_color);
   display: flex;
@@ -345,7 +354,7 @@
   position: absolute;
   transform: translate(-100%);
   height: 106%;
-  width: 100%;
+  inline-size: 100%;
   background-color: var(--assent_color);
   transition: transform 0.5s ease-in-out;
 }
@@ -406,7 +415,7 @@
   position: absolute;
   transform: translate(-100%) ;
   height: 100%;
-  width: 100%;
+  inline-size: 100%;
   background-color: var(--assent_color);
   transition: transform 0.5s ease-in-out;
 }
@@ -427,7 +436,7 @@
   color: var(--cover_color);
   mix-blend-mode: difference;
   z-index: 1;
-  width: 28px;
+  inline-size: 28px;
   height: 28px;
   margin-bottom: 2px;
 }
@@ -439,7 +448,7 @@
   }
 
   .floppy {
-    width: 21px;
+    inline-size: 21px;
     height: 21px;
     margin-bottom: 0px;
   }
@@ -464,7 +473,7 @@
   .cover[open] {
     padding: 30px;
     max-height: 193px;
-   max-width: 357px;
+    max-width: 357px;
   }
 }
 
@@ -474,11 +483,11 @@
 }
 
 .form__cover {
-  width: 100%;
+  inline-size: 100%;
 }
 
 .cover__save {
-  width: 100%;
+  inline-size: 100%;
   padding: 12.5px 0;
 }
 
@@ -491,7 +500,7 @@
 }
 
 .floppy__cover {
-  width: 39px;
+  inline-size: 39px;
   height: 39px;
 }
 
