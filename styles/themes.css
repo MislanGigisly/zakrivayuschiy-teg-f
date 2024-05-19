@@ -8,8 +8,8 @@
 @media (prefers-color-scheme: dark) {
 
     :root {
-        --main_font: 'Inter', serif;
-        --assent_font: 'PressStart', sans-serif;
+        --main_font: 'Inter', sans-serif;
+        --assent_font: 'PressStart2P', fantasy;
         --fw_title: 785;
         --fw_card__text: 465;
         --bg_color: #000;
@@ -39,8 +39,8 @@
 }
 
 :root.theme-dark {
-    --main_font: 'Inter', serif;
-    --assent_font: 'PressStart', sans-serif;
+    --main_font: 'Inter', sans-serif;
+    --assent_font: 'PressStart2P', fantasy;
     --fw_title: 785;
     --fw_card__text: 465;
     --bg_color: #000;
@@ -69,8 +69,8 @@
 }
 
 :root.theme-light {
-    --main_font: 'Inter', serif;
-    --assent_font: 'PressStart', sans-serif;
+    --main_font: 'Inter', sans-serif;
+    --assent_font: 'PressStart2P', fantasy;
     --fw_title: 700;
     --fw_card__text: 400;
     --bg_color: #fff;
