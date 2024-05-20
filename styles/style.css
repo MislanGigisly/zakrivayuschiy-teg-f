@@ -34,7 +34,7 @@
 .header {
   background-color: var(--bg_color);
   min-inline-size: 375px;
-  inline-size: 100vw;
+  inline-size: 100%;
   max-inline-size: 700px;
   margin: 100px 0 100px 0;
   padding: 120px 0 20px 0;
@@ -144,7 +144,7 @@
   margin-bottom: 50px;
   padding-bottom: 25px;
   min-inline-size: 375px;
-  inline-size: 100vw;
+  inline-size: 100%;
   max-inline-size: 700px;
 }
 
